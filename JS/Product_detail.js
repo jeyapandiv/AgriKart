@@ -92,7 +92,7 @@ const pla_obj = {
                     './Assets/small_images/cabbage2.jpeg']
             },
             {
-                id: 3, imgSrc: './Assets/PlaAssets/plaCaliflower.jpeg', productName: 'Califlower', price: '60', oprice: '90', description: `<li>Cauliflower is low in fat</li>
+                id: 3, imgSrc: './Assets/PlaAssets/plaCaliflower.jpeg', productName: 'Cauliflower', price: '60', oprice: '90', description: `<li>Cauliflower is low in fat</li>
             <li>Rich in Vitamin C, K, Potassium and Manganese</li>
             <li>Can be used with Potatoes or in soups, manchurian, salad and parathas.</li>
             <li>Store in a cool, dry place away from sunlight

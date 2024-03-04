@@ -98,7 +98,7 @@ function plasidecatview() {
                 data: [
                     { imgSrc: './Assets/PlaAssets/plaBeetroot.jpeg', productName: 'Beetroot' },
                     { imgSrc: './Assets/PlaAssets/plaCabbage.jpeg', productName: 'Cabbage' },
-                    { imgSrc: './Assets/PlaAssets/plaCaliflower.jpeg', productName: 'Califlower' },
+                    { imgSrc: './Assets/PlaAssets/plaCaliflower.jpeg', productName: 'Cauliflower' },
                     { imgSrc: './Assets/PlaAssets/plaCapsicum.jpeg', productName: 'Capsicum' },
                     { imgSrc: './Assets/PlaAssets/plaCarrot.jpeg', productName: 'Carrot' },
                     { imgSrc: './Assets/PlaAssets/plaCoconut.jpeg', productName: 'Coconut' },

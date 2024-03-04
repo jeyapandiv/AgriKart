@@ -45,7 +45,7 @@ const plp_obj_vegetable = {
         data: [
             { id: 1, imgSrc: './Assets/PlaAssets/plaBeetroot.jpeg', productName: 'Beetroot', plpdescription: 'dummytext1', plpprice: '₹60', plporiginalPrice: '₹90' },
             { id: 2, imgSrc: './Assets/PlaAssets/plaCabbage.jpeg', productName: 'Cabbage', plpdescription: 'dummytext2', plpprice: '₹100', plporiginalPrice: '₹190' },
-            { id: 3, imgSrc: './Assets/PlaAssets/plaCaliflower.jpeg', productName: 'Califlower', plpdescription: 'dummytext3', plpprice: '₹60', plporiginalPrice: '₹90' },
+            { id: 3, imgSrc: './Assets/PlaAssets/plaCaliflower.jpeg', productName: 'Cauliflower', plpdescription: 'dummytext3', plpprice: '₹60', plporiginalPrice: '₹90' },
             { id: 4, imgSrc: './Assets/PlaAssets/plaCapsicum.jpeg', productName: 'Capsicum', plpdescription: 'dummytext4', plpprice: '₹50', plporiginalPrice: '₹80' },
             { id: 5, imgSrc: './Assets/PlaAssets/plaCarrot.jpeg', productName: 'Carrot', plpdescription: 'dummytext5', plpprice: '₹70', plporiginalPrice: '₹100' },
             { id: 6, imgSrc: './Assets/PlaAssets/plaCoconut.jpeg', productName: 'Coconut', plpdescription: 'dummytext6', plpprice: '₹100', plporiginalPrice: '₹120' },
