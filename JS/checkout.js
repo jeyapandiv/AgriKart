@@ -15,22 +15,16 @@ function navigationMain() {
 }
 
 document.querySelector(".paymentDiv").classList.add("disNone");
+// document.querySelector(".paymentReviewDiv").classList.remove("disNone");
 
 let selectAddress = document.querySelector(".selectAddress");
 let paymentSection = document.querySelector(".paymentDiv");
-
-let selectAddressList = document.querySelector(".addressList");
-let createAddress = document.querySelector(".newAddressDiv");
-let newAddForm = document.forms.newAddress;
 
 const processStatus = document.querySelector(".processNav").children;
 
 processStatus[0].classList.add("fontWeight");
 
 function navigatePayment(btn) {
-  // if (!createAddress.className.includes("disNone")) {
-    
-  // }
   if ((btn.innerText == "Use this address") || btn == "Use this address") {
     selectAddress.classList.add("disNone");
     paymentSection.classList.remove("disNone");
@@ -49,6 +43,9 @@ function navigatePayment(btn) {
   }
 }
 
+let selectAddressList = document.querySelector(".addressList");
+let createAddress = document.querySelector(".newAddressDiv");
+let newAddForm = document.forms.newAddress;
 
 function selectCreateNvAddBtn(btn) {
 

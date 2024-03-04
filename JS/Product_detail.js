@@ -169,23 +169,23 @@ const pla_obj = {
                 id: 16, imgSrc: './Assets/PlaAssets/plaBlueberry.jpeg', productName: 'Blueberry', price: `100`, oprice: `190`, description: `<li>Graded, sorted and quality fruits and vegetables</li>
                 <li>Fresh, hygienic and natural</li>
                 <li>Dried Blueberries contain bone-strengthening minerals Calcium and Vitamin K.</li>
-                <li>The nutritional value of blueberries is so high; they are considered one of the most antioxidant-dense foods in the world. Dried Blueberries from Happilo are rich in vitamins A & C, Iron and Manganese.</li><li></li>`, small: [
+                <li>The nutritional value of blueberries is so high; they are considered one of the most antioxidant-dense foods in the world. Dried Blueberries from Happilo are rich in vitamins A & C, Iron and Manganese.</li>`, small: [
                     './Assets/small_images/Blueberry1.jpg',
                     './Assets/small_images/Blueberry2.webp',
                     './Assets/small_images/Blueberry3.jpg']
             },
             {
                 id: 17, imgSrc: './Assets/PlaAssets/plaGrapes.jpeg', productName: 'Grapes', price: `100`, oprice: `190`, description: `<li>Fresh, hygienic and natural<li>
-            <li>Avocado by-products exert anti-proliferative and anti-inflammatory activities.<li>
-            <li>Avocado seeds phytochemical improves carbohydrate and lipid metabolism.<li>`, small: [
+            <li>Avocado by-products exert anti-proliferative and anti-inflammatory activities.</li>
+            <li>Avocado seeds phytochemical improves carbohydrate and lipid metabolism.</li>`, small: [
                     './Assets/small_images/Grapes1.webp',
                     './Assets/small_images/Grapes2.jpg',
                     './Assets/small_images/Grapes3.jpg']
             },
             {
                 id: 18, imgSrc: './Assets/PlaAssets/plaGuava.jpeg', productName: 'Guava', price: `100`, oprice: `190`, description: `<li>Avocado fruit and its by-products are rich sources of nutrients and phytochemicals.<li>
-                <li>Avocado by-products exert anti-proliferative and anti-inflammatory activities.<li>
-                <li>Avocado seeds phytochemical improves carbohydrate and lipid metabolism.<li>`, small: [
+                <li>Avocado by-products exert anti-proliferative and anti-inflammatory activities.</li>
+                <li>Avocado seeds phytochemical improves carbohydrate and lipid metabolism.</li>`, small: [
                     './Assets/small_images/Guava1.webp',
                     './Assets/small_images/Guava2.jpg',
                     './Assets/small_images/Coconut3.webp']

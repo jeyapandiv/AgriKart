@@ -21,6 +21,10 @@
   font-style: normal;
 }
 
+.disNone {
+  display: none;
+}
+
 .checkout,
 .addressDefault,
 .checkoutAddress,
@@ -325,9 +329,7 @@
   margin: 10px 0px;
 }
 
-.disNone {
-  display: none;
-}
+
 
 .fontWeight {
   font-weight: 700;
