@@ -390,11 +390,15 @@ function renderHtml(renderItem) {
                    
                 </ul>
                 <div class="quantity">
+                    <div class="quantityIcon">
                     <i class="fa-solid fa-minus" style="color: #ff0000;" id="minus"></i>
                     <input class="product-qty" type="text" value="1" min="1" id="quantity-count">
                     <i class="fa-solid fa-plus" style="color: #46c70f;" id="plus"></i>
+                    </div>
+                    <div class="add_card">
                     <button onclick="storeProductDetails()">Add to Cart</button>
                     <button onclick="navigateCheckout(this)">Buy Now</button>
+                    </div>
                 </div>
             </div>
     
@@ -528,4 +532,27 @@ for (let i = 0; i < allImages.length; i++) {
 
 
 
+// function to store details in local storage for wishlist
+function addToWishlist() {
+    // Get product details
+    var productName = document.querySelector('.product-name').textContent;
+    var productImg = document.querySelector('.product-img').src;
+    var productPrice = document.querySelector('.product-price').textContent;
+    var productWeight = document.querySelector('.product-weight').innerText;
+    var productQty = document.querySelector('.product-qty').value;
 
+
+    // Get existing wishlist from local storage or initialize if it doesn't exist
+    var wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+    wishlist.push({
+        "ProductName": productName,
+        "ProductImage": productImg,
+        "ProductPrice": productPrice
+    });
+
+
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+}
+document.querySelector('.heart').addEventListener('click', addToWishlist);
+document.querySelector('.wish-cart').addEventListener('click',storeProductDetails());

@@ -126,6 +126,10 @@
   background-color: #153c2e00;
 }
 
+#newAddress {
+  height: 95%; width: 92%; display: flex; flex-direction: column; gap: 7px;
+}
+
 .selectAddDiv,
 .addressDefault,
 .actionsAddress > *,

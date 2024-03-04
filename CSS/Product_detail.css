@@ -172,10 +172,12 @@ margin-bottom: 3%;
 
 .quantity{
   /* margin-top: 5%; */
+  width: 250px;
   margin-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 
@@ -200,15 +202,36 @@ margin-bottom: 3%;
 
 }
 
-button {
+#quantity {
+  margin: 10px;
+}
+
+.quantityIcon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.add_card {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.add_card button {
+  width: 105px;
   background: var(--primary-color);
   border-radius: 4px;
-  padding: 10px 37px;
+  margin-right: 10px;
   border: none;
   color: var(--white);
   font-weight: 600;
   color: var(--black);
+  padding: 10px 2px;
 }
+
 
 button:hover {
   background:  #153c2e;
@@ -217,7 +240,7 @@ button:hover {
 }
 
 button:active {
-  padding: 8px 32px;
+  padding: 8px 0px;
   transition: ease-in 0.2s;
 }
 
@@ -327,22 +350,7 @@ margin-left: 5%;
 .product-details label{
 margin-left: 5%;
 }
-.add_card {
-display: flex;
-flex-direction: column;
-width: 100%;
-justify-content: center;
-align-items: center;
-margin-top: 5%;
 
-
-}
-.add_card button{
-border-radius: 5px;
-}
-#buynow{
-margin-top: 5%;
-}
 .related-items-div a{
 color: var(--secondary-color);
 }
