@@ -158,6 +158,7 @@ margin-bottom: 3%;
 }
 .product-info li{
   line-height: 20px;
+  padding: 6px;
 }
 
 .product-info del {
@@ -168,8 +169,10 @@ margin-bottom: 3%;
   color: var(--box-shadow2);
   width: 77%;
 }
+
 .quantity{
-  margin-top: 5%;
+  /* margin-top: 5%; */
+  margin-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,9 +211,16 @@ button {
 }
 
 button:hover {
-  background:  var(--primary-color);
-  transition: ease-in 0.4s;
+  background:  #153c2e;
+  color: white;
+  transition: ease-in 0.2s;
 }
+
+button:active {
+  padding: 8px 32px;
+  transition: ease-in 0.2s;
+}
+
 
 .delivery {
   display: flex;
@@ -262,10 +272,10 @@ margin: auto;
 }
 
 .related-item{
-max-width: 300px;
+max-width: 256px;
 width: 100%;
 padding: 20px 20px 0 20px;
-border: 1px solid gray;
+box-shadow: 0px 1px 5px 1px var(--box-shadow1);
 }
 
 .related-items-div{
@@ -273,7 +283,8 @@ display: flex;
 }
 
 img.item-img {
-  width: 262px;
+  width: 210px;
+  height: 174px;
 }
 
 .related-item >h3{
@@ -290,6 +301,9 @@ img.item-img {
 }
 .product-details h2{
   color:var(--secondary-color);
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 23px;
   padding: 10px;
 }
 .product-details li {
@@ -324,7 +338,7 @@ margin-top: 5%;
 
 }
 .add_card button{
-border-radius: 50px;
+border-radius: 5px;
 }
 #buynow{
 margin-top: 5%;

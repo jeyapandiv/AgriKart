@@ -400,11 +400,11 @@ function renderHtml(renderItem) {
     
             <!-- Product details -->
             <div class="product-details">
-                <h2>Product details</h2>
+                <h2>Delivery details</h2>
                 <h3>One-time purchase</h3>
                 <h5>₹2200.00 (₹1560.00 / 1kg)</h5>
                 <ul>
-                    <li>Fastest delivery Tomorrow, 23 February. Order within 9 hrs 25 mins.</li>
+                    <li>Fastest delivery Tomorrow 4 March, Order within 9 hrs 25 mins.</li>
                     <li>FREE delivery Saturday, 24 February on orders dispatched.</li>
                 </ul>
                 <label for="Quy">Quantity</label>
@@ -419,7 +419,7 @@ function renderHtml(renderItem) {
                 </div>
             </div>`
 
-            for (let i = 0; i < 4; i++) {
+            for (let i = 0; i < 5; i++) {
                 const smallItem = renderItem.data[i];
 
                 console.log(smallItem, "ok");

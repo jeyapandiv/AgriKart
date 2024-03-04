@@ -66,7 +66,6 @@ var trimEm = RegEmail.value.trim()
 var trimPwo = RegPassword.value.trim()
 
 
-function OTBVALIDPAGE(){
 
 if(!(trimFn=="" || trimCont=="" || trimEm=="" || trimPwo=="")){
 
@@ -126,7 +125,7 @@ if(!(trimFn=="" || trimCont=="" || trimEm=="" || trimPwo=="")){
 
     }
 
-}
+
 // --------------------------------REGEXP ----------------------
 
 if(trimFn==""){
@@ -147,10 +146,6 @@ if(trimPwo==""){
     RegPassword.classList.add("pssworAlertBox");
 }
 // ----------------------------------FAIRBASE TRIGGER SESSION------------------------------------------------------
-
-
-
-OTBVALIDPAGE();
 
 
 function storeFireBase()

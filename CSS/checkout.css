@@ -107,6 +107,7 @@
   border: 1px solid rgb(214, 214, 214);
   border-radius: 5px;
   box-shadow: 1px 1px 4px 2px rgb(214, 214, 214);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,13 +117,12 @@
   width: 250px;
   padding: 15px;
   position: relative;
-  left: 630px;
+  left: 58em;
   top: -305px;
   background-color: #153c2e00;
 }
 
 .selectAddDiv,
-.addressListDiv,
 .addressDefault,
 .actionsAddress > *,
 .totalCard,
@@ -159,10 +159,10 @@
 .addressListDiv {
   width: 100%;
   height: 90%;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .addressList {
@@ -212,6 +212,7 @@
 }
 
 .totalCard {
+  background-color: var(--white);
   width: 30%;
   height: 90%;
   align-items: center;
