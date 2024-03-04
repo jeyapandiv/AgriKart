@@ -66,17 +66,41 @@ color: var(--second-color);
     top: 0px;
     background-color: var(--blur-color);
     border-radius: 6px;
-    height: 650px;
+    height: 665px;
     width: 100%;
     overflow: hidden;
     cursor: pointer;
 }
 
+li a{
+    color: var(--rareUse2-color);
+}
+h4 a, h4 a i{
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+/* #plaNavcatlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0px;
+} */
+
+.plaSideNavcategory {
+    margin-left: 20px;
+}
+
+.plaSideNavcategory a {
+   line-height: 20px;
+}
+
 .plaSideNavMain {
     background-color: var(--rareUse2-color);
-    height: 650px;
+    height: 670px;
     width: 300px;
     overflow-x: scroll;
+    border-right: 1px solid grey;
 }
 
 .plaSideNav{
@@ -159,6 +183,11 @@ color: var(--second-color);
 .plaSidenavhide { display: none; }
 
 .plaSideblock { display: block;}
+
+#plaNavcatlog { display: none;}
+
+
+
 
  /* pla and plp main------------------- */
 
@@ -402,18 +431,4 @@ text-decoration: underline;
         opacity: 1;
         transform: translateY(0);
     }
-}
-li a{
-    color: var(--rareUse2-color);
-}
-h4 a, h4 a i{
-    color: var(--secondary-color);
-    font-size: 16px;
-}
-#plaNavcatlog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    line-height: 0px;
 }
