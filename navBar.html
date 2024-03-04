@@ -55,12 +55,24 @@
           <i class="fa-solid fa-magnifying-glass" style="color: white; font-size: 16px;"></i>
         </div>
       </div>
-      <div class="cartProfileIcon" style="width: 10%">
+      <div class="cartProfileIcon" style="width: 17%">
         <i id="navProfileIcon" class="fa-solid fa-user"></i>
-        <i id="navCrtIcon" class="fa-solid fa-cart-shopping" onclick="cartIconPageNavigate()"></i>
+        <i id="wishlistIcon" class="fa-solid fa-heart"  onclick="cartIconPageNavigate(this)"></i>
+        <i id="navCrtIcon" class="fa-solid fa-cart-shopping" onclick="cartIconPageNavigate(this)"></i>
       </div>
     </div>
   </div>
+
+<script>
+  function cartIconPageNavigate(icon) {
+    if (icon.id == "wishlistIcon") {
+      window.location.href = "wishlist.html"
+    }
+    else (
+      window.location.href = "cart.html"
+    )
+  }
+</script>
 
 </body>
 

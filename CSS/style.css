@@ -57,12 +57,16 @@ body {
 /* side nav bar ---------------------------------------- */
 
 .plaSidediv *{ line-height: 0px;}
+
+#plaSideNavList1:hover{
+color: var(--second-color);
+}
 .plaSidediv {
     position: fixed;
     top: 0px;
     background-color: var(--blur-color);
     border-radius: 6px;
-    height: 660px;
+    height: 650px;
     width: 100%;
     overflow: hidden;
     cursor: pointer;
@@ -70,11 +74,12 @@ body {
 
 .plaSideNavMain {
     background-color: var(--rareUse2-color);
-    height: 660px;
-    overflow-y: scroll;
+    height: 650px;
+    width: 300px;
+    overflow-x: scroll;
 }
 
-.plaSideNav {
+.plaSideNav{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -95,12 +100,15 @@ body {
     align-items: center;
     gap: 20px;
 }
-
+#plaSideNavList a:hover{
+    color: var(--second-color);
+    text-decoration: underline;
+}
 #plaSideClose {
     position: sticky;
     top: 30px;
     right: 5px;
-    margin-left: 280px;
+    margin-left: 260px;
 }
 
 .plasidebdy { display: flex;}
@@ -394,4 +402,18 @@ text-decoration: underline;
         opacity: 1;
         transform: translateY(0);
     }
+}
+li a{
+    color: var(--rareUse2-color);
+}
+h4 a, h4 a i{
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+#plaNavcatlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0px;
 }
