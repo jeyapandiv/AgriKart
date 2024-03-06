@@ -611,7 +611,7 @@ function renderHtml(renderItem) {
     
             <!-- Right side -->
             <div class="product-info">
-                <h3 class="product-name">${items.productName} |</h3>
+                <h3 class="product-name">${items.productName} </h3>
                 <p class="product-weight">500grm</p> 
                 <h5>Price: <span class="product-price">₹${items.price}</span> <del> ₹${items.oprice}</del></h5>
                 <ul>
@@ -655,7 +655,7 @@ function renderHtml(renderItem) {
                 </div>
             </div>`;
 
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 5; i++) {
         const smallItem = renderItem.data[i];
 
         console.log(smallItem, "ok");
