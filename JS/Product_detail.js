@@ -441,7 +441,7 @@ const pla_obj = {
       },
       {
         id: 41,
-        imgSrc: "./Assets/PlaAssets/plaKaniwa.jpeg",
+        imgSrc: "./Assets/PlaAssets/plaRedRice.jpeg",
         productName: "RedRice",
         price: `100`,
         oprice: `190`,

@@ -8,6 +8,7 @@
 }
 :root {
   --primary-color : #5DC7A1;
+  --button-backround : #153c2e;
   --secondary-color : #C84E2A;
   --backround-one : #ebfdf7;
   --box-shadow1 : #e4e4e4;
@@ -30,15 +31,19 @@ body {
   width: 100%;
   height: 60px;
   background-color: var(--white);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   border-bottom: 1px solid rgb(235, 235, 235);
   box-shadow: 0px 2px 2px rgb(214, 214, 214);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .product-container {
+  /* margin-top: 20px; */
 display: flex;
 justify-content: start;
 align-items: start;
@@ -234,21 +239,22 @@ margin-bottom: 3%;
 
 .add_card button {
   width: 105px;
-  background: var(--primary-color);
+  background: var(--button-backround);
   border-radius: 4px;
   margin-right: 10px;
   border: none;
   color: var(--white);
   font-weight: 600;
-  color: var(--black);
+  color: var(--white);
   padding: 10px 2px;
 }
 
 
 button:hover {
-  background:  #153c2e;
+  background:  #205b45;
   color: white;
   transition: ease-in 0.2s;
+  cursor: pointer;
 }
 
 button:active {

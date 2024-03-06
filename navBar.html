@@ -37,6 +37,12 @@
       color: #153c2e;
     }
 
+    .navCheckoutLeft img:hover,
+    i:hover,
+    #navSearchIcon:hover {
+      cursor: pointer;
+    }
+
     #wishlistIcon::before {
       margin: 0;
     }
@@ -50,17 +56,17 @@
       <img id="mainLogo" src="./Assets/logo-full-palli-tamil-color.png" alt="" style="width: 150px; height: 40px"
         onclick="navigationMain()" />
     </div>
-    <div class="navCheckoutRight" style="width: 60%">
+    <div class="navCheckoutRight" style="width: 70%">
       <div class="navSearch" style="width: 65%; display: flex; justify-content: start; align-items: center;">
         <input id="navSearchBox" type="text" placeholder="search products..." style="box-shadow: 0px 2px 5px rgb(156, 156, 156); border: none; outline: none;
                    height: 35px; width: 85%; padding: 0px 10px; border-radius: 17px 0px 0px 17px;" />
         <div id="navSearchIcon"
-          style="width: 8%; height: 36px; background-color: #153c2e; border-radius: 0px 17px 17px 0px; box-shadow: 2px 2px 5px rgb(156, 156, 156);">
+          style="width: 7%; height: 36px; background-color: #153c2e; border-radius: 0px 17px 17px 0px; box-shadow: 2px 2px 5px rgb(156, 156, 156);">
           <i class="fa-solid fa-magnifying-glass" style="color: white; font-size: 16px;"></i>
         </div>
       </div>
       <div class="cartProfileIcon"
-        style="width: 17%; display: flex; justify-content: space-between; align-items: center;">
+        style="width: 14%; display: flex; justify-content: space-between; align-items: center;">
         <i id="navProfileIcon" class="fa-solid fa-user"></i>
         <i id="wishlistIcon" class="fa-solid fa-heart" onclick="wishIconPageNavigate(this)" style="margin: 0;"></i>
         <i id="navCrtIcon" class="fa-solid fa-cart-shopping" onclick="cartIconPageNavigate(this)"></i>
@@ -69,13 +75,7 @@
   </div>
 
   <!-- <script>
-    function cartIconPageNavigate(icon) {
-      window.location.href = "cart.html"
-    }
-    function navigationMain() {
-      window.location.href = "index.html";
-    }
-
+    
 function navigateCheckout(btn) {
   window.location.href = "checkout.html";
 }
