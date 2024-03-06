@@ -98,7 +98,7 @@ function plasidecatview() {
                 data: [
                     { imgSrc: './Assets/PlaAssets/plaBeetroot.jpeg', productName: 'Beetroot' },
                     { imgSrc: './Assets/PlaAssets/plaCabbage.jpeg', productName: 'Cabbage' },
-                    { imgSrc: './Assets/PlaAssets/plaCaliflower.jpeg', productName: 'Cauliflower' },
+                    { imgSrc: './Assets/PlaAssets/plaCaliflower.jpeg', productName: 'Califlower' },
                     { imgSrc: './Assets/PlaAssets/plaCapsicum.jpeg', productName: 'Capsicum' },
                     { imgSrc: './Assets/PlaAssets/plaCarrot.jpeg', productName: 'Carrot' },
                     { imgSrc: './Assets/PlaAssets/plaCoconut.jpeg', productName: 'Coconut' },
@@ -262,7 +262,7 @@ function plasidecatview() {
             }
         }
 
-        function navigateProducts(direction, category, products, container) {
+        function navigateProducts(direction, category, products, container){
             const cardContainer = container;
             cardContainer.innerHTML = '';
 
@@ -318,24 +318,30 @@ function plasidecatview() {
         
 
         // login verfication -----------------------------
+        let loginbtn = document.querySelectorAll('#plaSideBtn');
+        let profileicon = document.getElementById('navProfileIcon');
+        let logoutbtn = document.getElementById('plasignout');
 
-        let loginbtn=document.querySelectorAll('#plaSideBtn');
-        let profileicon=document.getElementById('navProfileIcon');
-        let logoutbtn=document.getElementById('plasignout');
+        // Retrieve user information from local storage
+        let storedUser = localStorage.getItem("usercollation");
+        let userCollation = storedUser ? JSON.parse(storedUser) : null;
 
-
-        if(localStorage.user)
-            {
-                loginbtn.style.display='none'
-                profileicon.style.display='block';
-                logoutbtn.style.display='block'
-                console.log("hi")
-            }
-        else
-            {
-
-                loginbtn.style.display='block'
-                profileicon.style.display='none';
-                logoutbtn.style.display='none'
-                console.log("bye")
-            };
+        if (userCollation) {
+            loginbtn.forEach(btn => {
+                btn.classList.remove('view');
+                btn.classList.add('block');
+            });
+            profileicon.classList.add('view');
+            logoutbtn.classList.add('view');
+            console.log("hi");
+        } else {
+            loginbtn.forEach(btn => {
+                btn.classList.remove('block');
+                btn.classList.add('view');
+            });
+            profileicon.classList.remove('view');
+            profileicon.classList.add('block');
+            logoutbtn.classList.remove('view');
+            logoutbtn.classList.add('block');
+            console.log("bye");
+        }

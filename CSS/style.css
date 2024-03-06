@@ -51,8 +51,8 @@ body {
  }
 
  /* #plaSideBtn{ display: none;} */
- #navProfileIcon{ display: none;}
- #plasignout{ display: none;}
+ .navProfileIcon{ display: none;}
+ .plasignout{ display: none;}
  
 /* side nav bar ---------------------------------------- */
 
@@ -61,16 +61,7 @@ body {
 #plaSideNavList1:hover{
 color: var(--second-color);
 }
-.plaSidediv {
-    position: fixed;
-    top: 0px;
-    background-color: var(--blur-color);
-    border-radius: 6px;
-    height: 665px;
-    width: 100%;
-    overflow: hidden;
-    cursor: pointer;
-}
+
 
 li a{
     color: var(--rareUse2-color);
@@ -79,31 +70,34 @@ h4 a, h4 a i{
     color: var(--secondary-color);
     font-size: 16px;
 }
-/* #plaNavcatlog{
+#plaNavcatlog{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     line-height: 0px;
-} */
-
-.plaSideNavcategory {
-    margin-left: 20px;
 }
-
-.plaSideNavcategory a {
-   line-height: 20px;
+.plaSidediv {
+    position: fixed;
+    top: 0px;
+    background-color: var(--blur-color);
+    border-radius: 6px;
+    height: 655px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .plaSideNavMain {
     background-color: var(--rareUse2-color);
-    height: 670px;
+    height: 660px;
     width: 300px;
+    border-right: 1px solid var(--secondary-color);
     overflow-x: scroll;
-    border-right: 1px solid grey;
 }
 
 .plaSideNav{
+    
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -150,15 +144,7 @@ h4 a, h4 a i{
     height: 60px;
 }
 
-#plasignout{
-    padding: 2%;
-    width: 100px;
-    font-size: larger;
-    background-color:var(--secondary-color);
-    color: var(--rareUse2-color);
-    border: none;
-    border-radius: 4px;    
-} 
+
 
 #plaSideBtn {
     padding: 5px 0px;
@@ -180,14 +166,13 @@ h4 a, h4 a i{
  
 #plaCategoryList { width: 100%;}
 
-.plaSidenavhide { display: none; }
-
 .plaSideblock { display: block;}
 
-#plaNavcatlog { display: none;}
+.plaSidenavhide { display: none; }
 
-
-
+#plaNavcatlog{
+    display: none;
+}
 
  /* pla and plp main------------------- */
 

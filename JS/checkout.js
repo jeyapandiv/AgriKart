@@ -6,9 +6,13 @@ fetch("navBar.html")
     document.querySelector(".navBarCheckout").innerHTML += data;
   });
 
-function cartIconPageNavigate() {
-  window.location.href = "cart.html";
-}
+  function cartIconPageNavigate(icon) {
+    window.location.href = "cart.html";
+  }
+  
+  function wishIconPageNavigate(icon) {
+      window.location.href = "wishlist.html";
+  }
 
 function navigationMain() {
   window.location.href = "index.html";
