@@ -10,7 +10,7 @@
 :root {
     --primary-color:  #5DC7A1;
     --second-color:#C84E2A;
-    --secondary-color:#061811;
+    --secondary-color:#153c2e;
     --shade4-color:   #0b281c;
     --thirdsade-color:#53b390;
     --rareUse1-color: #000000;
@@ -48,11 +48,16 @@ body {
    box-shadow: 0px 2px 2px rgb(214, 214, 214);
    justify-content: center;
    gap: 10%;
+   position: sticky;
+   top: 0px;
+   background-color: var(--rareUse2-color);
  }
 
  /* #plaSideBtn{ display: none;} */
  .navProfileIcon{ display: none;}
  .plasignout{ display: none;}
+
+
  
 /* side nav bar ---------------------------------------- */
 
@@ -144,16 +149,23 @@ h4 a, h4 a i{
     height: 60px;
 }
 
+ #plasignout:hover{
+    text-decoration: underline;
+ }
 
-
-#plaSideBtn {
+ #plasignout, #plaSideBtn {
     padding: 5px 0px;
     width: 100px;
     font-size: 16px;
     background-color:var(--secondary-color);
     border: none;
     border-radius: 4px; 
+    color: var(--rareUse2-color);
     box-shadow: 1px 1px 5px var(--boxshawdow-color);   
+}
+
+#plaCategoryList{
+    padding: 2px;
 }
 
 #plaSideBtn a{
@@ -185,6 +197,7 @@ h4 a, h4 a i{
     width: 100%;
     gap: 30px;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 a i{ color: var(--rareUse2-color); }
@@ -322,7 +335,7 @@ text-decoration: underline;
 /*pla footer------------------- */
 .plaFooter {
     margin-top: 30px;
-    height: 280px;
+    /* height: 280px; */
     width: 100%;
     background:var(--secondary-color);
     line-height: 2px;
@@ -333,31 +346,39 @@ text-decoration: underline;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }  
 #plafootAtag{   color: var(--rareUse2-color); font-size: large;}
-#plafootAtag:hover{    color: var(--boxshawdow-color); text-decoration: underline;}
+#plafootAtag:hover{    color: var(--second-color); text-decoration: underline;}
 .plaFooterMain{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .plafooterlist{
-    padding: 40px 0px 0px 70px;
-    width: 100%;
-    height: 100%;
+    /* padding: 30px 0px 0px 0px; */
+    /* width: 100%; */
+    height: 200px;
     color: var(--rareUse2-color);
     display: flex;
-    gap: 15px;
+    /* gap: 15px; */
     align-items:flex-start;
     justify-content:space-around;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .plafooterListitems{
     padding: 0px 3px 8px 3px;
-    border-bottom: 2px solid var(--secondary-color);
+    text-decoration: underline var(--secondary-color);
 }
 .plafooterListitems:hover{
-    border-bottom: 2px solid var(--rareUse2-color);
+    color: var(--second-color);
+    text-decoration: underline var(--second-color);
+}
+
+li a:hover{
+color: var(--second-color);
 }
 
 /* plp page--------------- */

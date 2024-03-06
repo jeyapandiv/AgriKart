@@ -1,9 +1,6 @@
 // --------------------------FAIREBASE LOGIN SETUP ----------------------
 
 
-
-
-
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
   // TODO: Add SDKs for Firebase products that you want to use
@@ -76,7 +73,7 @@ continueBtn.addEventListener("click",()=>{
     
 
 SignUpBtn.addEventListener("click",()=>{
-     console.log("Test")
+console.log("Test")
 signInWithEmailAndPassword(auth,RegEmail.value,RegPassword.value)
 .then(async(credential)=>{
     alert("SUCESSFULLY LOGINED")
@@ -122,9 +119,5 @@ var googleSign = ()=>{
       const errorMessage = error.message;
     });
   
-
 }
-GoogleIcon.addEventListener("click",googleSign)
-
-
-
+GoogleIcon.addEventListener("click",googleSign);

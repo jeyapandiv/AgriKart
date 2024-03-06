@@ -110,7 +110,7 @@ if(!(trimFn=="" || trimCont=="" || trimEm=="" || trimPwo=="")){
                     if (onetimepword == OTPInnerValue) {
 
                         alert("Email addresss verified")
-                        storeFireBase();
+
                         location.href = "Login.html"
                     }
                     else {
@@ -124,7 +124,6 @@ if(!(trimFn=="" || trimCont=="" || trimEm=="" || trimPwo=="")){
     );
 
     }
-
 
 // --------------------------------REGEXP ----------------------
 
@@ -148,12 +147,9 @@ if(trimPwo==""){
 // ----------------------------------FAIRBASE TRIGGER SESSION------------------------------------------------------
 
 
-function storeFireBase()
-{
-    console.log("New FireStore")
     createUserWithEmailAndPassword(auth,RegEmail.value,RegPassword.value)
 .then(async(credentials)=>{   
-    console.log("Signup Test")
+    
     let ref = doc(db,"user",credentials.user.uid)
        await setDoc(ref,{
         FirstName:RegFirstName.value,
@@ -161,18 +157,17 @@ function storeFireBase()
         contact:RegContNum.value,
         email:RegEmail.value,
         password:RegPassword.value
+       
          });
+    
 })
 .catch((err)=>{
     alert(err.message)
     
 });
-}
+
 
 });
-
-
-
 
 
 // ------------------------------------FIRST NAME -----------------------------------------------
