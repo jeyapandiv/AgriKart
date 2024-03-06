@@ -615,14 +615,10 @@ function renderHtml(renderItem) {
                 <p class="product-weight">500grm</p> 
                 <h5>Price: <span class="product-price">₹${items.price}</span> <del> ₹${items.oprice}</del></h5>
                 <ul>
-                <h2> Product Information</h2>
+                <h2>Delivery Information</h2>
                 
                   ${items.description}
                  
-                    <li>Nonpareil Premium California Almonds / Batams</li>
-                    <li> Free Shipping on orders above ₹499</li>
-                    <li> With Protein, Vitamin E & Fiber</li>
-                    
                    
                 </ul>
                 <div class="quantity">
@@ -659,7 +655,7 @@ function renderHtml(renderItem) {
                 </div>
             </div>`;
 
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 4; i++) {
         const smallItem = renderItem.data[i];
 
         console.log(smallItem, "ok");
@@ -740,6 +736,7 @@ for (let i = 0; i < allImages.length; i++) {
 }
 
 // function to store details in local storage for wishlist
+
 function addToWishlist() {
   // Get product details
   var productName = document.querySelector(".product-name").textContent;
@@ -749,6 +746,7 @@ function addToWishlist() {
   var productQty = document.querySelector(".product-qty").value;
 
   // Get existing wishlist from local storage or initialize if it doesn't exist
+
   var wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
   wishlist.push({
@@ -760,6 +758,6 @@ function addToWishlist() {
   localStorage.setItem("wishlist", JSON.stringify(wishlist));
 }
 document.querySelector(".heart").addEventListener("click", addToWishlist);
-document
-  .querySelector(".wish-cart")
-  .addEventListener("click", storeProductDetails());
+document.querySelector(".wish-cart").addEventListener("click", storeProductDetails());
+
+

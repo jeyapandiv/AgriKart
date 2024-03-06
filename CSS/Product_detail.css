@@ -390,3 +390,23 @@ top: 30%;
 }
 
  
+.product-details del {
+  color: var(--secondary-color);
+}
+
+.fa-minus:before, .fa-subtract:before {
+
+  box-shadow: 0px 1px 5px 1px var(--box-shadow1);
+  padding: 33%;
+}
+
+.fa-plus::before {
+
+  box-shadow: 0px 1px 5px 1px var(--box-shadow1);
+  padding: 33%;
+}
+
+
+.related-item del{
+  color: var(--secondary-color);
+}
